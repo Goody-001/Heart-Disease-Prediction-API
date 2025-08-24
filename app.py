@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load your trained model (make sure heart_disease_model.pkl exists in your repo)
-model = joblib.load("heart_disease_model.pkl")
+model = joblib.load("model.pkl")
 
 @app.route("/", methods=["GET"])
 def home():
